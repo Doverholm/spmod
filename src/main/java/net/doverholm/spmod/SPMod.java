@@ -1,5 +1,6 @@
 package net.doverholm.spmod;
 
+import net.doverholm.spmod.block.ModBlocks;
 import net.doverholm.spmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,5 +18,6 @@ public class SPMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
