@@ -1,6 +1,7 @@
 package net.doverholm.spmod.item;
 
 import net.doverholm.spmod.SPMod;
+import net.doverholm.spmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ETHEREUM);
                         entries.add(ModItems.ETHEREUM_ORE);
+                        entries.add(ModBlocks.ETHEREUM_BLOCK);
+                        entries.add(ModBlocks.ETHEREUM_ORE_BLOCK);
 
                     }).build());
 

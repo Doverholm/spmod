@@ -31,10 +31,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         SPMod.LOGGER.info("Registiring Mod Blocks  " + SPMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.ETHEREUM_ORE_BLOCK);
-            entries.add(ModBlocks.ETHEREUM_BLOCK);
-        });
     }
 }
