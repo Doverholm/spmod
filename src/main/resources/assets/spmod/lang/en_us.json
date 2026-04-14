@@ -1,5 +1,8 @@
 {
   "item.spmod.ethereum_ore": "Ethereum Ore",
   "item.spmod.ethereum": "Ethereum",
-  "item.spmod.wardens_bane": "Wardens Bane"
+  "item.spmod.wardens_bane": "Wardens Bane",
+
+  "block.spmod.ethereum_ore_block": "Block of Ethereum Ore",
+  "block.spmod.ethereum_block": "Block of Ethereum Ore"
 }
