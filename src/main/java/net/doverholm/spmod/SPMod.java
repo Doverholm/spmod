@@ -1,5 +1,6 @@
 package net.doverholm.spmod;
 
+import net.doverholm.spmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +16,6 @@ public class SPMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
