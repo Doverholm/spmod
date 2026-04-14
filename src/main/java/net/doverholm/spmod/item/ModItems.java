@@ -12,6 +12,7 @@ public class ModItems {
 
     public static final Item ETHEREUM_ORE = registerItem("ethereum_ore", new Item(new Item.Settings()));
     public static final Item ETHEREUM = registerItem("ethereum", new Item(new Item.Settings()));
+    public static final Item WARDENS_BANE = registerItem("wardens_bane", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SPMod.MOD_ID, name), item);
@@ -23,6 +24,9 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(ETHEREUM_ORE);
             entries.add(ETHEREUM);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(WARDENS_BANE);
         });
     }
 }
