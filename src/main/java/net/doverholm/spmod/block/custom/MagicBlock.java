@@ -1,6 +1,7 @@
 package net.doverholm.spmod.block.custom;
 
 import net.doverholm.spmod.item.ModItems;
+import net.doverholm.spmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.gui.screen.Screen;
@@ -35,12 +36,16 @@ public class MagicBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getStack().getItem() == ModItems.ETHEREUM_ORE) {
+            if(isValidItem(itemEntity.getStack())) {
                 itemEntity.setStack(new ItemStack(ModItems.ETHEREUM, itemEntity.getStack().getCount()));
             }
         }
 
         super.onSteppedOn(world, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
