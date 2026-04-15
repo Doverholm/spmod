@@ -1,6 +1,7 @@
 {
   "item.spmod.ethereum_ore": "Ethereum Ore",
   "item.spmod.ethereum": "Ethereum",
+  "item.spmod.scorchline": "Scorchline",
 
   "item.spmod.wardens_bane": "Wardens Bane",
   "item.spmod.wand": "Wand",
@@ -18,5 +19,6 @@
 
   "tooltip.spmod.magic_block.tooltip": "Unique looking design, maybe i should throw something on it?",
   "tooltip.spmod.wand.shift_down": "Wierd looking stick, with a slight smell of burnt metal",
-  "tooltip.spmod.curious_mana_bean": "Looks tasty!"
+  "tooltip.spmod.curious_mana_bean": "Looks tasty!",
+  "tooltip.spmod.scorchline": "Ooo hot hot hot!"
 }

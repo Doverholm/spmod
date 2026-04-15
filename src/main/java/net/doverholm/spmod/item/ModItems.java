@@ -17,6 +17,16 @@ public class ModItems {
 
     public static final Item ETHEREUM_ORE = registerItem("ethereum_ore", new Item(new Item.Settings()));
     public static final Item ETHEREUM = registerItem("ethereum", new Item(new Item.Settings()));
+    public static final Item SCORCHLINE = registerItem("scorchline", new Item(new Item.Settings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            if(Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.spmod.scorchline"));
+            }
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+
     public static final Item WARDENS_BANE = registerItem("wardens_bane", new Item(new Item.Settings()));
 
     public static final Item WAND = registerItem("wand", new WandItem(new Item.Settings().maxDamage(32)));

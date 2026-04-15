@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.spmod.sp_mod.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.WARDENS_BANE);
+                        entries.add(ModItems.SCORCHLINE);
 
 
                     }).build());
