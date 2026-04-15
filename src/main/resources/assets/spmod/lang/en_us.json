@@ -1,11 +1,22 @@
 {
   "item.spmod.ethereum_ore": "Ethereum Ore",
   "item.spmod.ethereum": "Ethereum",
+
   "item.spmod.wardens_bane": "Wardens Bane",
+  "item.spmod.wand": "Wand",
+
+  "item.spmod.curious_mana_bean": "Curious Mana Bean",
+
+  "item.spmod.dried_curious_mana_bean": "Dried Curious Mana Bean",
 
   "block.spmod.ethereum_ore_block": "Block of Ethereum Ore",
   "block.spmod.ethereum_block": "Block of Ethereum Ore",
+  "block.spmod.magic_block": "A Block of Magic",
 
   "itemgroup.spmod.sp_mod.items": "SP MOD Items",
-  "itemgroup.spmod.sp_mod.ethereum": "Ethereum"
+  "itemgroup.spmod.sp_mod.ethereum": "Ethereum",
+
+  "tooltip.spmod.magic_block.tooltip": "Unique looking design, maybe i should throw something on it?",
+  "tooltip.spmod.wand.shift_down": "Wierd looking stick, with a slight smell of burnt metal",
+  "tooltip.spmod.curious_mana_bean": "Looks tasty!"
 }

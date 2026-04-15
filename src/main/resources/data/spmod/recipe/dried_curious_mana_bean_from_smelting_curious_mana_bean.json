@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.05,
+  "group": "ethereum",
+  "ingredient": {
+    "item": "spmod:curious_mana_bean"
+  },
+  "result": {
+    "id": "spmod:dried_curious_mana_bean"
+  }
+}

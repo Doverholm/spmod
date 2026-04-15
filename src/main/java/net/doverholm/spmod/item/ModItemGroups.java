@@ -25,10 +25,24 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.ETHEREUM))
                     .displayName(Text.translatable("itemgroup.spmod.sp_mod.ethereum"))
                     .entries((displayContext, entries) -> {
+
+                        // items
                         entries.add(ModItems.ETHEREUM);
                         entries.add(ModItems.ETHEREUM_ORE);
+
+                        // foods
+                        entries.add(ModItems.CURIOUS_MANA_BEAN);
+
+                        // fuels
+                        entries.add(ModItems.DRIED_CURIOUS_MANA_BEAN);
+
+                        // blocks
                         entries.add(ModBlocks.ETHEREUM_BLOCK);
                         entries.add(ModBlocks.ETHEREUM_ORE_BLOCK);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+
+                        //tools
+                        entries.add(ModItems.WAND);
 
                     }).build());
 
