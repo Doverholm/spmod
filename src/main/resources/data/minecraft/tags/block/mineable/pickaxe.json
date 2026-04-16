@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "spmod:ethereum_block",
-    "spmod:ethereum_ore_block"
-  ]
-}
