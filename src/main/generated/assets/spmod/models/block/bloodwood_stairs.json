@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "spmod:block/bloodwood_planks",
+    "side": "spmod:block/bloodwood_planks",
+    "top": "spmod:block/bloodwood_planks"
+  }
+}

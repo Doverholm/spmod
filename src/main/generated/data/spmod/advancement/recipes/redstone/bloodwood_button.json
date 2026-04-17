@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bloodwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spmod:bloodwood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "spmod:bloodwood_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bloodwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "spmod:bloodwood_button"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "spmod:block/magic_block"
+    }
+  }
+}

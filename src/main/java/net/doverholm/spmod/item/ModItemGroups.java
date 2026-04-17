@@ -19,6 +19,24 @@ public class ModItemGroups {
                         entries.add(ModItems.WARDENS_BANE);
                         entries.add(ModItems.SCORCHLINE);
 
+                        entries.add(ModItems.CURIOUS_MANA_BEAN);
+                        entries.add(ModItems.DRIED_CURIOUS_MANA_BEAN);
+
+                        entries.add(ModBlocks.BLOODWOOD_LOG);
+                        entries.add(ModBlocks.BLOODWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                        entries.add(ModBlocks.BLOODWOOD_LEAVES);
+                        entries.add(ModBlocks.BLOODWOOD_PLANKS);
+                        entries.add(ModBlocks.BLOODWOOD_STAIRS);
+                        entries.add(ModBlocks.BLOODWOOD_SLAB);
+                        entries.add(ModBlocks.BLOODWOOD_BUTTON);
+                        entries.add(ModBlocks.BLOODWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.BLOODWOOD_FENCE);
+                        entries.add(ModBlocks.BLOODWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.BLOODWOOD_DOOR);
+                        entries.add(ModBlocks.BLOODWOOD_TRAPDOOR);
+
 
                     }).build());
     public static final ItemGroup ETHEREUM = Registry.register(Registries.ITEM_GROUP,
@@ -30,12 +48,6 @@ public class ModItemGroups {
                         // items
                         entries.add(ModItems.ETHEREUM);
                         entries.add(ModItems.ETHEREUM_ORE);
-
-                        // foods
-                        entries.add(ModItems.CURIOUS_MANA_BEAN);
-
-                        // fuels
-                        entries.add(ModItems.DRIED_CURIOUS_MANA_BEAN);
 
                         // blocks
                         entries.add(ModBlocks.ETHEREUM_BLOCK);

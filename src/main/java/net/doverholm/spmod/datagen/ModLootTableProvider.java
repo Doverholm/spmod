@@ -32,6 +32,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAGIC_BLOCK);
         addDrop(ModBlocks.ETHEREUM_BLOCK);
 
+        addDrop(ModBlocks.BLOODWOOD_LOG);
+        addDrop(ModBlocks.BLOODWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+        addDrop(ModBlocks.BLOODWOOD_LEAVES); // Denna måste ändras när sapplings är tillagt
+        addDrop(ModBlocks.BLOODWOOD_PLANKS);
+        addDrop(ModBlocks.BLOODWOOD_STAIRS);
+        addDrop(ModBlocks.BLOODWOOD_SLAB, slabDrops(ModBlocks.BLOODWOOD_SLAB));
+        addDrop(ModBlocks.BLOODWOOD_BUTTON);
+        addDrop(ModBlocks.BLOODWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.BLOODWOOD_FENCE);
+        addDrop(ModBlocks.BLOODWOOD_FENCE_GATE);
+        addDrop(ModBlocks.BLOODWOOD_DOOR, doorDrops(ModBlocks.BLOODWOOD_DOOR));
+        addDrop(ModBlocks.BLOODWOOD_TRAPDOOR);
+
         addDrop(ModBlocks.ETHEREUM_ORE_BLOCK, multipleOreDrops(ModBlocks.ETHEREUM_ORE_BLOCK, ModItems.ETHEREUM_ORE, 1, 3));
     }
 

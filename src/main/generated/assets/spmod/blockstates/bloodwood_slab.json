@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "spmod:block/bloodwood_slab"
+    },
+    "type=double": {
+      "model": "spmod:block/bloodwood_planks"
+    },
+    "type=top": {
+      "model": "spmod:block/bloodwood_slab_top"
+    }
+  }
+}

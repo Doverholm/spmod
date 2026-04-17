@@ -6,8 +6,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -42,5 +45,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('M', Items.MAGMA_CREAM)
                 .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                 .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
+                .input(Ingredient.ofItems(
+                        ModBlocks.BLOODWOOD_LOG,
+                        ModBlocks.BLOODWOOD_WOOD,
+                        ModBlocks.STRIPPED_BLOODWOOD_LOG,
+                        ModBlocks.STRIPPED_BLOODWOOD_WOOD
+                ))
+                .criterion("has_bloodwood_log", conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                .offerTo(exporter);
+
+        createStairsRecipe(ModBlocks.BLOODWOOD_STAIRS, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_SLAB, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.BLOODWOOD_BUTTON)
+                .input(ModBlocks.BLOODWOOD_PLANKS)
+                .criterion("has_bloodwood_log", conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                .offerTo(exporter);
+
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.BLOODWOOD_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        createFenceRecipe(ModBlocks.BLOODWOOD_FENCE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        createFenceGateRecipe(ModBlocks.BLOODWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        createDoorRecipe(ModBlocks.BLOODWOOD_DOOR, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
+        createTrapdoorRecipe(ModBlocks.BLOODWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
     }
 }

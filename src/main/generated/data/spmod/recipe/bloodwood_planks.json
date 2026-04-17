@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    [
+      {
+        "item": "spmod:bloodwood_log"
+      },
+      {
+        "item": "spmod:bloodwood_wood"
+      },
+      {
+        "item": "spmod:stripped_bloodwood_log"
+      },
+      {
+        "item": "spmod:stripped_bloodwood_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "id": "spmod:bloodwood_planks"
+  }
+}

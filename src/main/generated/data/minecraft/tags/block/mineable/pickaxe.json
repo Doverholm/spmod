@@ -1,0 +1,7 @@
+{
+  "values": [
+    "spmod:ethereum_block",
+    "spmod:magic_block",
+    "spmod:ethereum_ore_block"
+  ]
+}

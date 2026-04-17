@@ -7,12 +7,26 @@
   "item.spmod.wand": "Wand",
 
   "item.spmod.curious_mana_bean": "Curious Mana Bean",
-
   "item.spmod.dried_curious_mana_bean": "Dried Curious Mana Bean",
 
   "block.spmod.ethereum_ore_block": "Block of Ethereum Ore",
   "block.spmod.ethereum_block": "Block of Ethereum Ore",
   "block.spmod.magic_block": "A Block of Magic",
+
+  "block.spmod.bloodwood_log": "Bloodwood Log",
+  "block.spmod.bloodwood_wood": "Bloodwood Wood",
+  "block.spmod.stripped_bloodwood_log": "Stripped Bloodwood Log",
+  "block.spmod.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
+  "block.spmod.bloodwood_leaves": "Bloodwood Leaves",
+  "block.spmod.bloodwood_planks": "Bloodwood Planks",
+  "block.spmod.bloodwood_stairs": "Bloodwood Stairs",
+  "block.spmod.bloodwood_slab": "Bloodwood Slab",
+  "block.spmod.bloodwood_button": "Bloodwood Button",
+  "block.spmod.bloodwood_pressure_plate": "Bloodwood Pressure Plate",
+  "block.spmod.bloodwood_fence": "Bloodwood Fence",
+  "block.spmod.bloodwood_fence_gate": "Bloodwood Fence Gate",
+  "block.spmod.bloodwood_door": "Bloodwood Door",
+  "block.spmod.bloodwood_trapdoor": "Bloodwood Trapdoor",
 
   "itemgroup.spmod.sp_mod.items": "SP MOD Items",
   "itemgroup.spmod.sp_mod.ethereum": "Ethereum",

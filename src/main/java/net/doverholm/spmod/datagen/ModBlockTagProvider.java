@@ -23,5 +23,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ETHEREUM_BLOCK)
                 .add(ModBlocks.ETHEREUM_ORE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.BLOODWOOD_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.BLOODWOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.BLOODWOOD_LOG)
+                .add(ModBlocks.BLOODWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_BLOODWOOD_LOG)
+                .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
     }
 }

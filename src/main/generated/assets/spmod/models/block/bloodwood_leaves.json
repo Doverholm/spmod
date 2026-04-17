@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "spmod:block/bloodwood_leaves"
+  }
+}

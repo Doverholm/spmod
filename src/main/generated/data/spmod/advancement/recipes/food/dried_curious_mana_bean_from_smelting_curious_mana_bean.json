@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_curious_mana_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spmod:curious_mana_bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "spmod:dried_curious_mana_bean_from_smelting_curious_mana_bean"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_curious_mana_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "spmod:dried_curious_mana_bean_from_smelting_curious_mana_bean"
+    ]
+  }
+}
