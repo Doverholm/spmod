@@ -1,5 +1,6 @@
 package net.doverholm.spmod;
 
+import net.doverholm.spmod.component.ModDataComponentTypes;
 import net.doverholm.spmod.item.ModItemGroups;
 import net.doverholm.spmod.block.ModBlocks;
 import net.doverholm.spmod.item.ModItems;
@@ -29,6 +30,7 @@ public class SPMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.DRIED_CURIOUS_MANA_BEAN, 40);
 

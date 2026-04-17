@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-18T00:51:44.7429621	SP Mod/Model Definitions
+// 1.21.1	2026-04-18T01:20:31.449728	SP Mod/Model Definitions
 f25e19db60005157a33a8d977feb22dea4abf850 assets\spmod\models\block\bloodwood_log_horizontal.json
 8b1b9eeb6743c73670d658308e91eb24f8b80cef assets\spmod\models\block\ethereum_block.json
 feca94edd50fa1772c0b89e4d05e7896be6dedd1 assets\spmod\models\block\stripped_bloodwood_wood.json
@@ -27,8 +27,8 @@ ffbd98f5845b0ed30548b4fb6b4555d763248297 assets\spmod\models\item\stripped_blood
 b05fa0b076b8c8ac917d257dd2402cf619d726fa assets\spmod\models\block\stripped_bloodwood_log_horizontal.json
 e3382012f65aae1a11c13c8fc4219a1a5da4bc70 assets\spmod\models\block\stripped_bloodwood_log.json
 6453313a1fc322cbf8e583c76dbcbde989a4cd71 assets\spmod\models\item\bloodwood_wood.json
-3ae6f324a64c67b3c06bec6d34d26d6e51f6941e assets\spmod\blockstates\bloodwood_planks.json
 23cab588c05aea67583b66ba9cb2b8632721d19d assets\spmod\blockstates\bloodwood_wood.json
+3ae6f324a64c67b3c06bec6d34d26d6e51f6941e assets\spmod\blockstates\bloodwood_planks.json
 7283529d4da94495463fdd514af6a9e29d35b25f assets\spmod\models\block\bloodwood_fence_gate_open.json
 91b5b24e0f1bd0c570a0d3c8bc68d9c9e558d31c assets\spmod\models\item\bloodwood_button.json
 98e3656e06ab1baeb3dc37f4cae4ad72f77ec6f5 assets\spmod\models\item\bloodwood_trapdoor.json

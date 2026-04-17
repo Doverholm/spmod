@@ -1,6 +1,7 @@
 package net.doverholm.spmod.item.custom;
 
 import net.doverholm.spmod.block.ModBlocks;
+import net.doverholm.spmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -46,6 +47,8 @@ public class WandItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -56,6 +59,10 @@ public class WandItem extends Item {
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if(Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.spmod.wand.shift_down"));
+        }
+
+        if(stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last block changes at " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);
