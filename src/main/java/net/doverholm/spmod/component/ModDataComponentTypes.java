@@ -1,5 +1,6 @@
 package net.doverholm.spmod.component;
 
+import com.mojang.serialization.Codec;
 import net.doverholm.spmod.SPMod;
 import net.minecraft.component.ComponentType;
 import net.minecraft.registry.Registries;
@@ -11,6 +12,7 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
     public static final ComponentType<BlockPos> COORDINATES = register("coordinates", builder -> builder.codec(BlockPos.CODEC));
+    public static final ComponentType<Integer> BURNING_STACKS = register("burning_stacks", builder -> builder.codec(Codec.INT));
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(SPMod.MOD_ID,name),

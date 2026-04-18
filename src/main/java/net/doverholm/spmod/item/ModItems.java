@@ -1,6 +1,7 @@
 package net.doverholm.spmod.item;
 
 import net.doverholm.spmod.SPMod;
+import net.doverholm.spmod.item.custom.BurningBowItem;
 import net.doverholm.spmod.item.custom.WandItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.BowItem;
@@ -11,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.List;
 
@@ -45,7 +47,7 @@ public class ModItems {
     public static final Item DRIED_CURIOUS_MANA_BEAN = registerItem("dried_curious_mana_bean", new Item(new Item.Settings()));
 
     public static final Item OATH_OF_THE_BURNING_VEIN = registerItem("oath_of_the_burning_vein",
-            new BowItem(new Item.Settings().maxDamage(500)));
+            new BurningBowItem(new Item.Settings().maxDamage(500).fireproof().rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SPMod.MOD_ID, name), item);

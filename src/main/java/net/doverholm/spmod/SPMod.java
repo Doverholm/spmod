@@ -50,11 +50,24 @@ public class SPMod implements ModInitializer {
 
 		ServerTickEvents.END_SERVER_TICK.register((server) -> {
 			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-				if (player.getMainHandStack().getItem() == ModItems.SCORCHLINE ||
-					player.getOffHandStack().getItem() == ModItems.SCORCHLINE) {
-					player.setOnFireFor(1);
 
-					break;
+				boolean shouldBurn = false;
+
+				if (player.getMainHandStack().isOf(ModItems.SCORCHLINE) ||
+					player.getOffHandStack().isOf(ModItems.SCORCHLINE) ||
+					player.getOffHandStack().isOf(ModItems.OATH_OF_THE_BURNING_VEIN)) {
+					shouldBurn = true;
+				}
+
+				for (int i = 0; i < 9; i++) {
+					if (player.getInventory().getStack(i).isOf(ModItems.OATH_OF_THE_BURNING_VEIN)) {
+						shouldBurn = true;
+						break;
+					}
+				}
+
+				if (shouldBurn) {
+					player.setOnFireFor(1);
 				}
 
 			}
