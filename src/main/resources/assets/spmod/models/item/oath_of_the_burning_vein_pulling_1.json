@@ -1,0 +1,6 @@
+{
+  "parent": "spmod:item/oath_of_the_burning_vein",
+  "textures": {
+    "layer0": "spmod:item/oath_of_the_burning_vein_pulling_1"
+  }
+}

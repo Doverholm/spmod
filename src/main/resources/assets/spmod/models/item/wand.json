@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "spmod:item/wand"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "spmod:used": 1
+      },
+      "model": "spmod:item/wand_used"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ package net.doverholm.spmod.item;
 import net.doverholm.spmod.SPMod;
 import net.doverholm.spmod.item.custom.WandItem;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
@@ -42,6 +43,9 @@ public class ModItems {
     });
 
     public static final Item DRIED_CURIOUS_MANA_BEAN = registerItem("dried_curious_mana_bean", new Item(new Item.Settings()));
+
+    public static final Item OATH_OF_THE_BURNING_VEIN = registerItem("oath_of_the_burning_vein",
+            new BowItem(new Item.Settings().maxDamage(500)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SPMod.MOD_ID, name), item);

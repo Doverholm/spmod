@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-18T01:20:31.449728	SP Mod/Model Definitions
+// 1.21.1	2026-04-18T17:51:54.55049	SP Mod/Model Definitions
 f25e19db60005157a33a8d977feb22dea4abf850 assets\spmod\models\block\bloodwood_log_horizontal.json
 8b1b9eeb6743c73670d658308e91eb24f8b80cef assets\spmod\models\block\ethereum_block.json
 feca94edd50fa1772c0b89e4d05e7896be6dedd1 assets\spmod\models\block\stripped_bloodwood_wood.json
@@ -7,8 +7,8 @@ afc245b2aa1ec1693ca7491bb1f17e6d0ba26610 assets\spmod\models\block\bloodwood_lea
 c2d39ed1a5c9f69b42a05224c2436e152fbd8259 assets\spmod\models\block\bloodwood_door_bottom_right.json
 035f71dc4ab9dab22fe295945044b8934436a86a assets\spmod\models\item\stripped_bloodwood_wood.json
 187386bac649aa71fecfd58664373fe842b64271 assets\spmod\models\item\bloodwood_slab.json
-fc1317d9021002144aa23b51603413f1d2f299f5 assets\spmod\models\item\curious_mana_bean.json
 71918232fa3f7da5e28c4fc317b9bca579a78d8b assets\spmod\models\block\bloodwood_fence_post.json
+fc1317d9021002144aa23b51603413f1d2f299f5 assets\spmod\models\item\curious_mana_bean.json
 d4ad884bbe54c23bef9abe3c74a0b23004fe8421 assets\spmod\models\block\bloodwood_wood.json
 b238f2095164e723856c01d5bdd9144a2b77ca67 assets\spmod\blockstates\bloodwood_stairs.json
 e939601eb7facfee835bb3e9b98e5378ddb5fcaa assets\spmod\models\item\bloodwood_pressure_plate.json
@@ -34,14 +34,13 @@ e3382012f65aae1a11c13c8fc4219a1a5da4bc70 assets\spmod\models\block\stripped_bloo
 98e3656e06ab1baeb3dc37f4cae4ad72f77ec6f5 assets\spmod\models\item\bloodwood_trapdoor.json
 d658d2bbfa0db991545d2b9782188b3451f713a6 assets\spmod\models\block\bloodwood_pressure_plate_down.json
 256034b8edc5e40adefe9660333a35dd92dae3ca assets\spmod\models\item\ethereum_ore.json
-1694791a58fd4056546fb88321093ecddbd2790e assets\spmod\models\item\wand.json
 b8f1a58b6d220cf63f638a6a15f2e029403f2dd1 assets\spmod\models\item\bloodwood_log.json
 76c24fb1b76ad044017ae6c7c7e8ddd00f80a0a9 assets\spmod\models\block\bloodwood_pressure_plate.json
 574e1f03986d24ccbe42267ee677c2387c608f7c assets\spmod\models\item\ethereum.json
 8768367e4f25529b9b45f3f4cbe842255b378eee assets\spmod\models\block\bloodwood_trapdoor_bottom.json
 438f5c980a23fe5ceda7b95f9b8f33c8ad5f47b4 assets\spmod\models\item\bloodwood_door.json
-3f1871a83b027bb964cdd10bdbe1ba27a1622bb5 assets\spmod\blockstates\stripped_bloodwood_log.json
 d23b2a3feab5960427b6ffaab2640f4a033c0b10 assets\spmod\blockstates\ethereum_block.json
+3f1871a83b027bb964cdd10bdbe1ba27a1622bb5 assets\spmod\blockstates\stripped_bloodwood_log.json
 df4567c6d9498be7d5c99006dfcdf927802ea907 assets\spmod\models\block\bloodwood_trapdoor_top.json
 b3050649411e1e9ef04ed6821473f2f94b642099 assets\spmod\models\block\bloodwood_fence_gate_wall_open.json
 9275000d8a8f34721f880cfa60e1c5d9b737d9b8 assets\spmod\models\item\wardens_bane.json
