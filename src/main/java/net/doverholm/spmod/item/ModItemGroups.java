@@ -39,6 +39,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLOODWOOD_DOOR);
                         entries.add(ModBlocks.BLOODWOOD_TRAPDOOR);
 
+                        entries.add(ModItems.WARDENS_BANE_SWORD);
+                        entries.add(ModItems.WARDENS_BANE_AXE);
+                        entries.add(ModItems.WARDENS_BANE_HOE);
+                        entries.add(ModItems.WARDENS_BANE_SHOVEL);
+                        entries.add(ModItems.WARDENS_BANE_PICKAXE);
+
 
                     }).build());
     public static final ItemGroup ETHEREUM = Registry.register(Registries.ITEM_GROUP,
