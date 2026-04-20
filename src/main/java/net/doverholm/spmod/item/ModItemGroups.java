@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
                         entries.add(ModBlocks.BLOODWOOD_LEAVES);
                         entries.add(ModBlocks.BLOODWOOD_PLANKS);
+                        entries.add(ModBlocks.BLOODWOOD_SAPLING);
                         entries.add(ModBlocks.BLOODWOOD_STAIRS);
                         entries.add(ModBlocks.BLOODWOOD_SLAB);
                         entries.add(ModBlocks.BLOODWOOD_BUTTON);

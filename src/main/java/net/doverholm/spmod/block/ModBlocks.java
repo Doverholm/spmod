@@ -2,6 +2,7 @@ package net.doverholm.spmod.block;
 
 import net.doverholm.spmod.SPMod;
 import net.doverholm.spmod.block.custom.MagicBlock;
+import net.doverholm.spmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -34,6 +35,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block BLOODWOOD_PLANKS = registerBlock("bloodwood_planks",
             new Block(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block BLOODWOOD_SAPLING = registerBlock("bloodwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.BLOODWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block BLOODWOOD_STAIRS = registerBlock("bloodwood_stairs",
             new StairsBlock(ModBlocks.BLOODWOOD_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.WOOD)));

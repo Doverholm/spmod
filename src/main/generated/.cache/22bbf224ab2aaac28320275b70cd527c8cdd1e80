@@ -1,10 +1,11 @@
-// 1.21.1	2026-04-18T23:42:17.6381988	SP Mod/Model Definitions
+// 1.21.1	2026-04-20T21:50:48.8378354	SP Mod/Model Definitions
 f25e19db60005157a33a8d977feb22dea4abf850 assets\spmod\models\block\bloodwood_log_horizontal.json
 8b1b9eeb6743c73670d658308e91eb24f8b80cef assets\spmod\models\block\ethereum_block.json
 feca94edd50fa1772c0b89e4d05e7896be6dedd1 assets\spmod\models\block\stripped_bloodwood_wood.json
 1e7b4c2e3f40392ca58fd1aa8fccb6844d61cc9f assets\spmod\models\item\dried_curious_mana_bean.json
 afc245b2aa1ec1693ca7491bb1f17e6d0ba26610 assets\spmod\models\block\bloodwood_leaves.json
 c2d39ed1a5c9f69b42a05224c2436e152fbd8259 assets\spmod\models\block\bloodwood_door_bottom_right.json
+782d48655d830596d43e30edfaed13237ee503e6 assets\spmod\models\block\bloodwood_sapling.json
 035f71dc4ab9dab22fe295945044b8934436a86a assets\spmod\models\item\stripped_bloodwood_wood.json
 187386bac649aa71fecfd58664373fe842b64271 assets\spmod\models\item\bloodwood_slab.json
 fc1317d9021002144aa23b51603413f1d2f299f5 assets\spmod\models\item\curious_mana_bean.json
@@ -27,8 +28,8 @@ ffbd98f5845b0ed30548b4fb6b4555d763248297 assets\spmod\models\item\stripped_blood
 b05fa0b076b8c8ac917d257dd2402cf619d726fa assets\spmod\models\block\stripped_bloodwood_log_horizontal.json
 e3382012f65aae1a11c13c8fc4219a1a5da4bc70 assets\spmod\models\block\stripped_bloodwood_log.json
 6453313a1fc322cbf8e583c76dbcbde989a4cd71 assets\spmod\models\item\bloodwood_wood.json
-23cab588c05aea67583b66ba9cb2b8632721d19d assets\spmod\blockstates\bloodwood_wood.json
 3ae6f324a64c67b3c06bec6d34d26d6e51f6941e assets\spmod\blockstates\bloodwood_planks.json
+23cab588c05aea67583b66ba9cb2b8632721d19d assets\spmod\blockstates\bloodwood_wood.json
 7283529d4da94495463fdd514af6a9e29d35b25f assets\spmod\models\block\bloodwood_fence_gate_open.json
 91b5b24e0f1bd0c570a0d3c8bc68d9c9e558d31c assets\spmod\models\item\bloodwood_button.json
 98e3656e06ab1baeb3dc37f4cae4ad72f77ec6f5 assets\spmod\models\item\bloodwood_trapdoor.json
@@ -67,8 +68,10 @@ a0e6af8f3b2a8a9be3f4f0b10e238db926fb0846 assets\spmod\models\block\bloodwood_doo
 21536e75679d02b2a1452dfb9cdede6bc8eb07f8 assets\spmod\models\item\bloodwood_stairs.json
 e5943c6699a398ee7385a5543e5ceacb8b5e69c6 assets\spmod\blockstates\bloodwood_fence.json
 c0a44de2f1d7b82cef550436e2b5a1b67e6a6852 assets\spmod\models\item\bloodwood_fence.json
+c54bf7de5f78a7061e1ef3dfb63cabef33949284 assets\spmod\blockstates\bloodwood_sapling.json
 cf90034298874e970717ee46e732c2ad5de4ae76 assets\spmod\blockstates\bloodwood_button.json
 4e6db4b52b3db1bd287a3a96e6bad3d9c22d21d1 assets\spmod\blockstates\bloodwood_slab.json
+3630dd8ef1b083052f0d41ea568c06363e51b76d assets\spmod\models\item\bloodwood_sapling.json
 bd228766a7a1f1f22bad75a57223c18d1c92ee1a assets\spmod\models\block\bloodwood_slab.json
 92f08b8df33c377d363780cfd755b6f0d8987d90 assets\spmod\models\item\bloodwood_planks.json
 ef3d93a300576e55f842db46b6871221fd967008 assets\spmod\models\block\bloodwood_door_bottom_left_open.json

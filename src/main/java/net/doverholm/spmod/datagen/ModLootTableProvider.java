@@ -33,8 +33,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOODWOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_BLOODWOOD_LOG);
         addDrop(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
-        addDrop(ModBlocks.BLOODWOOD_LEAVES); // Denna måste ändras när sapplings är tillagt
+        addDrop(ModBlocks.BLOODWOOD_LEAVES, leavesDrops(ModBlocks.BLOODWOOD_LEAVES, ModBlocks.BLOODWOOD_SAPLING, 0.0625f));
         addDrop(ModBlocks.BLOODWOOD_PLANKS);
+        addDrop(ModBlocks.BLOODWOOD_SAPLING);
         addDrop(ModBlocks.BLOODWOOD_STAIRS);
         addDrop(ModBlocks.BLOODWOOD_SLAB, slabDrops(ModBlocks.BLOODWOOD_SLAB));
         addDrop(ModBlocks.BLOODWOOD_BUTTON);

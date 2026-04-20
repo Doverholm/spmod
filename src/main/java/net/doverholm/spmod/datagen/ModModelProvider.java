@@ -25,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BLOODWOOD_LOG).log(ModBlocks.STRIPPED_BLOODWOOD_LOG).wood(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
         blockStateModelGenerator.registerSingleton(ModBlocks.BLOODWOOD_LEAVES, TexturedModel.LEAVES);
         BlockStateModelGenerator.BlockTexturePool bloodwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOODWOOD_PLANKS);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.BLOODWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         bloodwoodPool.stairs(ModBlocks.BLOODWOOD_STAIRS);
         bloodwoodPool.slab(ModBlocks.BLOODWOOD_SLAB);
         bloodwoodPool.button(ModBlocks.BLOODWOOD_BUTTON);
@@ -40,10 +41,12 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ETHEREUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ETHEREUM_ORE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CURIOUS_MANA_BEAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRIED_CURIOUS_MANA_BEAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.WARDENS_BANE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCORCHLINE, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.BLOODWOOD_SAPLING.asItem(), Models.GENERATED);
 
     }
 }
