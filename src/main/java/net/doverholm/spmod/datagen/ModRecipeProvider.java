@@ -42,8 +42,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STRING)
                 .input('G', Items.GUNPOWDER)
                 .input('M', Items.MAGMA_CREAM)
+                .criterion(hasItem(Items.BLAZE_ROD), conditionsFromItem(Items.BLAZE_ROD))
+                .criterion(hasItem(Items.BLAZE_POWDER), conditionsFromItem(Items.BLAZE_POWDER))
+                .criterion(hasItem(Items.FIRE_CHARGE), conditionsFromItem(Items.FIRE_CHARGE))
                 .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .criterion(hasItem(Items.GUNPOWDER), conditionsFromItem(Items.GUNPOWDER))
+                .criterion(hasItem(Items.MAGMA_CREAM), conditionsFromItem(Items.MAGMA_CREAM))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OATH_OF_THE_BURNING_VEIN)
+                        .pattern(" WS")
+                        .pattern("W S")
+                        .pattern(" WS")
+                        .input('W', ModBlocks.BLOODWOOD_LOG)
+                        .input('S', ModItems.SCORCHLINE)
+                    .criterion(hasItem(ModItems.SCORCHLINE), conditionsFromItem(ModItems.SCORCHLINE))
+                    .criterion(hasItem(ModBlocks.BLOODWOOD_LOG), conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                    .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
                 .input(Ingredient.ofItems(
@@ -65,7 +80,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.BLOODWOOD_BUTTON)
                 .input(ModBlocks.BLOODWOOD_PLANKS)
-                .criterion("has_bloodwood_log", conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                .criterion("has_bloodwood_log", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
                 .offerTo(exporter);
 
         createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.BLOODWOOD_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
