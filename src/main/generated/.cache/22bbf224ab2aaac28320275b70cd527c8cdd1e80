@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-20T21:50:48.8378354	SP Mod/Model Definitions
+// 1.21.1	2026-04-20T22:26:54.0361385	SP Mod/Model Definitions
 f25e19db60005157a33a8d977feb22dea4abf850 assets\spmod\models\block\bloodwood_log_horizontal.json
 8b1b9eeb6743c73670d658308e91eb24f8b80cef assets\spmod\models\block\ethereum_block.json
 feca94edd50fa1772c0b89e4d05e7896be6dedd1 assets\spmod\models\block\stripped_bloodwood_wood.json
@@ -40,8 +40,8 @@ b8f1a58b6d220cf63f638a6a15f2e029403f2dd1 assets\spmod\models\item\bloodwood_log.
 574e1f03986d24ccbe42267ee677c2387c608f7c assets\spmod\models\item\ethereum.json
 8768367e4f25529b9b45f3f4cbe842255b378eee assets\spmod\models\block\bloodwood_trapdoor_bottom.json
 438f5c980a23fe5ceda7b95f9b8f33c8ad5f47b4 assets\spmod\models\item\bloodwood_door.json
-d23b2a3feab5960427b6ffaab2640f4a033c0b10 assets\spmod\blockstates\ethereum_block.json
 3f1871a83b027bb964cdd10bdbe1ba27a1622bb5 assets\spmod\blockstates\stripped_bloodwood_log.json
+d23b2a3feab5960427b6ffaab2640f4a033c0b10 assets\spmod\blockstates\ethereum_block.json
 df4567c6d9498be7d5c99006dfcdf927802ea907 assets\spmod\models\block\bloodwood_trapdoor_top.json
 b3050649411e1e9ef04ed6821473f2f94b642099 assets\spmod\models\block\bloodwood_fence_gate_wall_open.json
 9275000d8a8f34721f880cfa60e1c5d9b737d9b8 assets\spmod\models\item\wardens_bane.json
@@ -68,8 +68,8 @@ a0e6af8f3b2a8a9be3f4f0b10e238db926fb0846 assets\spmod\models\block\bloodwood_doo
 21536e75679d02b2a1452dfb9cdede6bc8eb07f8 assets\spmod\models\item\bloodwood_stairs.json
 e5943c6699a398ee7385a5543e5ceacb8b5e69c6 assets\spmod\blockstates\bloodwood_fence.json
 c0a44de2f1d7b82cef550436e2b5a1b67e6a6852 assets\spmod\models\item\bloodwood_fence.json
-c54bf7de5f78a7061e1ef3dfb63cabef33949284 assets\spmod\blockstates\bloodwood_sapling.json
 cf90034298874e970717ee46e732c2ad5de4ae76 assets\spmod\blockstates\bloodwood_button.json
+c54bf7de5f78a7061e1ef3dfb63cabef33949284 assets\spmod\blockstates\bloodwood_sapling.json
 4e6db4b52b3db1bd287a3a96e6bad3d9c22d21d1 assets\spmod\blockstates\bloodwood_slab.json
 3630dd8ef1b083052f0d41ea568c06363e51b76d assets\spmod\models\item\bloodwood_sapling.json
 bd228766a7a1f1f22bad75a57223c18d1c92ee1a assets\spmod\models\block\bloodwood_slab.json

@@ -7,7 +7,6 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FeatureConfig;
@@ -21,6 +20,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLOODWOOD_KEY = registerKey("bloodwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+
         register(context, BLOODWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BLOODWOOD_LOG),
                 new ForkingTrunkPlacer(5, 3, 2),
@@ -29,7 +29,6 @@ public class ModConfiguredFeatures {
                 new DarkOakFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(1)),
 
                 new TwoLayersFeatureSize(1, 0, 1)).build());
-
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
