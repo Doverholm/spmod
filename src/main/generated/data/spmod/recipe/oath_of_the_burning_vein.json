@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "spmod:scorchline"
+    },
+    "W": {
+      "item": "spmod:bloodwood_log"
+    }
+  },
+  "pattern": [
+    " WS",
+    "W S",
+    " WS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "spmod:oath_of_the_burning_vein"
+  }
+}
