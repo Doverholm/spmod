@@ -1,6 +1,7 @@
 package net.doverholm.spmod.datagen;
 
 import net.doverholm.spmod.block.ModBlocks;
+import net.doverholm.spmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -32,5 +33,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOODWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_BLOODWOOD_LOG)
                 .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ETHEREUM_PICKAXE)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
     }
 }

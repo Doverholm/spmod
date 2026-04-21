@@ -45,6 +45,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WARDENS_BANE_SWORD)
+                .pattern(" E ")
+                .pattern("BCB")
+                .pattern(" N ")
+                .input('E', Items.ECHO_SHARD)
+                .input('B', Items.BLAZE_POWDER)
+                .input('C', Items.SCULK_CATALYST)
+                .input('N', Items.BONE)
+                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
+                .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODWOOD_PLANKS, 4)
                 .input(Ingredient.ofItems(
                         ModBlocks.BLOODWOOD_LOG,

@@ -29,5 +29,21 @@ public class ModItemTagProvider  extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.BLOODWOOD_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.WARDENS_BANE_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.WARDENS_BANE_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.WARDENS_BANE_AXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.WARDENS_BANE_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.WARDENS_BANE_HOE);
+
     }
 }
