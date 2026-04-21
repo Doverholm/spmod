@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft.inccorect_for_wardens_bane_sword"
+  ],
+  "remove": [
+    "#spmod.needs_ethereum_pickaxe"
+  ]
+}

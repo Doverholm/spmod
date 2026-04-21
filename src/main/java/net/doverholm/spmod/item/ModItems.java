@@ -2,11 +2,11 @@ package net.doverholm.spmod.item;
 
 import net.doverholm.spmod.SPMod;
 import net.doverholm.spmod.item.custom.BurningBowItem;
+import net.doverholm.spmod.item.custom.WardensBaneSwordItem;
 import net.doverholm.spmod.item.custom.WandItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.BowItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -34,6 +34,21 @@ public class ModItems {
 
     public static final Item WAND = registerItem("wand", new WandItem(new Item.Settings().maxDamage(32)));
 
+    public static final Item WARDENS_BANE_SWORD = registerItem("wardens_bane_sword", new WardensBaneSwordItem(ModToolMaterials.WARDENS_BANE_SWORD, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.WARDENS_BANE_SWORD, 5, -2.4f))));
+
+    public static final Item WARDENS_BANE_PICKAXE = registerItem("wardens_bane_pickaxe", new PickaxeItem(ModToolMaterials.WARDENS_BANE_SWORD, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.WARDENS_BANE_SWORD, 1, -2.8f))));
+
+    public static final Item WARDENS_BANE_AXE = registerItem("wardens_bane_axe", new AxeItem(ModToolMaterials.WARDENS_BANE_SWORD, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.WARDENS_BANE_SWORD, 6, -3.2f))));
+
+    public static final Item WARDENS_BANE_SHOVEL = registerItem("wardens_bane_shovel", new ShovelItem(ModToolMaterials.WARDENS_BANE_SWORD, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.WARDENS_BANE_SWORD, 1.5f, -3.0f))));
+
+    public static final Item WARDENS_BANE_HOE = registerItem("wardens_bane_hoe", new HoeItem(ModToolMaterials.WARDENS_BANE_SWORD, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.WARDENS_BANE_SWORD, 0, -3.0f))));
+
     public static final Item CURIOUS_MANA_BEAN = registerItem("curious_mana_bean", new Item(new Item.Settings().food(ModFoodComponents.CURIOUS_MANA_BEAN)) {
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -55,5 +70,8 @@ public class ModItems {
 
     public static void registerModItems() {
         SPMod.LOGGER.info("Registering Mod Items for " + SPMod.MOD_ID);
+
     }
 }
+
+

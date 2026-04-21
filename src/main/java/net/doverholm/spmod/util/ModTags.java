@@ -9,6 +9,9 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_ETHEREUM_PICKAXE = createTag("needs_ethereum_pickaxe");
+        public static final TagKey<Block> INCORRECT_FOR_WARDENS_BANE_SWORD = createTag("incorrect_for_wardens_bane_sword");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(SPMod.MOD_ID, name));
         }

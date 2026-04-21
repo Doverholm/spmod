@@ -48,5 +48,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCORCHLINE, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.BLOODWOOD_SAPLING.asItem(), Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.WARDENS_BANE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDENS_BANE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDENS_BANE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WARDENS_BANE_HOE, Models.HANDHELD);
+
     }
 }
