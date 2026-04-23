@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bloodwood_log": {
+    "has_blaze_rod": {
       "conditions": {
         "items": [
           {
-            "items": "spmod:bloodwood_log"
+            "items": "minecraft:blaze_rod"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_scorchline",
-      "has_bloodwood_log"
+      "has_blaze_rod"
     ]
   ],
   "rewards": {

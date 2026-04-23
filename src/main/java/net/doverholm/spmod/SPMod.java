@@ -4,10 +4,14 @@ import net.doverholm.spmod.component.ModDataComponentTypes;
 import net.doverholm.spmod.item.ModItemGroups;
 import net.doverholm.spmod.block.ModBlocks;
 import net.doverholm.spmod.item.ModItems;
+import net.doverholm.spmod.item.custom.BurningBowItem;
+import net.doverholm.spmod.network.FireballVolleyPayload;
 import net.doverholm.spmod.world.gen.ModWorldGeneration;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -48,6 +52,23 @@ public class SPMod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_BLOODWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BLOODWOOD_LEAVES, 30, 60);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BLOODWOOD_PLANKS, 5, 20);
+
+		PayloadTypeRegistry.playC2S().register(FireballVolleyPayload.ID, FireballVolleyPayload.CODEC);
+		ServerPlayNetworking.registerGlobalReceiver(FireballVolleyPayload.ID, (payload, context) -> {
+			ServerPlayerEntity player = context.player();
+			if (!(player.getWorld() instanceof net.minecraft.server.world.ServerWorld serverWorld)) {
+				return;
+			}
+
+			if (player.getMainHandStack().isOf(ModItems.OATH_OF_THE_BURNING_VEIN)) {
+				BurningBowItem.shootFireballVolley(serverWorld, player, player.getMainHandStack());
+				return;
+			}
+
+			if (player.getOffHandStack().isOf(ModItems.OATH_OF_THE_BURNING_VEIN)) {
+				BurningBowItem.shootFireballVolley(serverWorld, player, player.getOffHandStack());
+			}
+		});
 
 		ServerPlayerEvents.JOIN.register((player -> {
 			String playerName = player.getName().getString();

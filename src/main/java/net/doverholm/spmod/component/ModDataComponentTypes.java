@@ -16,6 +16,8 @@ public class ModDataComponentTypes {
             builder -> builder.codec(BlockPos.CODEC).packetCodec(BlockPos.PACKET_CODEC));
     public static final ComponentType<Integer> BURNING_STACKS = register("burning_stacks",
             builder -> builder.codec(Codec.INT).packetCodec(PacketCodecs.INTEGER));
+    public static final ComponentType<String> WARDENS_BANE_OWNER = register("wardens_bane_owner",
+            builder -> builder.codec(Codec.STRING).packetCodec(PacketCodecs.STRING));
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(SPMod.MOD_ID,name),

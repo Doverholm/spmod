@@ -39,9 +39,14 @@
 
   "itemgroup.spmod.sp_mod.items": "SP MOD Items",
   "itemgroup.spmod.sp_mod.ethereum": "Ethereum",
+  "category.spmod.spmod": "SP Mod",
+  "key.spmod.fireball_volley": "Fireball Volley",
 
   "tooltip.spmod.magic_block.tooltip": "Unique looking design, maybe i should throw something on it?",
   "tooltip.spmod.wand.shift_down": "Wierd looking stick, with a slight smell of burnt metal",
   "tooltip.spmod.curious_mana_bean": "Looks tasty!",
-  "tooltip.spmod.scorchline": "Ooo hot hot hot!"
+  "tooltip.spmod.scorchline": "Ooo hot hot hot!",
+  "tooltip.spmod.oath_of_the_burning_vein.arrow": "Right click: shoots flaming arrows",
+  "tooltip.spmod.oath_of_the_burning_vein.fireball": "Press G: fires 2 ghast fireballs",
+  "message.spmod.wardens_bane.already_crafted": "You can only craft the Wardens Bane Sword once."
 }

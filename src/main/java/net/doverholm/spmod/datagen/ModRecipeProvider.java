@@ -54,10 +54,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern(" WS")
                         .pattern("W S")
                         .pattern(" WS")
-                        .input('W', ModBlocks.BLOODWOOD_LOG)
+                        .input('W', Items.BLAZE_ROD)
                         .input('S', ModItems.SCORCHLINE)
                     .criterion(hasItem(ModItems.SCORCHLINE), conditionsFromItem(ModItems.SCORCHLINE))
-                    .criterion(hasItem(ModBlocks.BLOODWOOD_LOG), conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
+                .criterion(hasItem(Items.BLAZE_ROD), conditionsFromItem(Items.BLAZE_ROD))
                     .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WARDENS_BANE_SWORD)
