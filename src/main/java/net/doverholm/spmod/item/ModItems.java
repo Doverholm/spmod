@@ -20,6 +20,7 @@ public class ModItems {
 
     public static final Item ETHEREUM_ORE = registerItem("ethereum_ore", new Item(new Item.Settings()));
     public static final Item ETHEREUM = registerItem("ethereum", new Item(new Item.Settings()));
+    public static final Item BLOODWOOD_STICK = registerItem("bloodwood_stick", new Item(new Item.Settings()));
     public static final Item SCORCHLINE = registerItem("scorchline", new Item(new Item.Settings()) {
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

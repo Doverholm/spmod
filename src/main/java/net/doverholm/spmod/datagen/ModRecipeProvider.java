@@ -81,6 +81,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_bloodwood_log", conditionsFromItem(ModBlocks.BLOODWOOD_LOG))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLOODWOOD_STICK, 4)
+                .pattern("P")
+                .pattern("P")
+                .input('P', ModBlocks.BLOODWOOD_PLANKS)
+                .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
+                .offerTo(exporter);
+
         createStairsRecipe(ModBlocks.BLOODWOOD_STAIRS, Ingredient.ofItems(ModBlocks.BLOODWOOD_PLANKS))
                 .criterion("has_bloodwood_planks", conditionsFromItem(ModBlocks.BLOODWOOD_PLANKS))
                 .offerTo(exporter);

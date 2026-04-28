@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.spmod.sp_mod.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.WARDENS_BANE);
+                        entries.add(ModItems.BLOODWOOD_STICK);
 
                         entries.add(ModItems.OATH_OF_THE_BURNING_VEIN);
                         entries.add(ModItems.SCORCHLINE);
